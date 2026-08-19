@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-ind-bg: #F4F6F5;
+  --color-ind-card: #FFFFFF;
+  --color-ind-text: #171A19;
+  --color-ind-text-sec: #66706C;
+  --color-ind-green: #1F7A4D;
+  --color-ind-green-bright: #2DBE78;
+  --color-ind-orange: #F28C28;
+  --color-ind-red: #D64545;
+  --color-ind-border: #DDE3E0;
+  --color-ind-dark: #202522;
+  --color-ind-dark-mid: #2C3030;
+  --color-ind-dark-light: #38403D;
+  --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDE3E0;
+  border-radius: 2px;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 1s infinite;
+}
+
+.animate-pulse-dot-1 {
+  animation: pulse-dot 1s 0.2s infinite;
+}
+
+.animate-pulse-dot-2 {
+  animation: pulse-dot 1s 0.4s infinite;
+}
